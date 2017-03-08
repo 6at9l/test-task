@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gallery</title>
+	<link rel="stylesheet" href="css/zeroStyle.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+
+</head>
+<body>
+	<div>
+	</div>
+	<div class="fl tree">
+		<div class="search">
+			<i class="fa fa-search"></i> <input id="searchCurDir" type="text">
+			<div>
+				<br>
+				<button id="deletDir">delet current dir</button>
+				<button id="addInDir">add folder in current dir</button>
+			</div>
+		</div>
+		<div class="folders" id="folders">
+			
+		</div>
+	</div>
+	<div class="fl gallery">
+		<div class="fl head">
+			<div class="fl dir" id="selectSystem">SYSTEM</div>
+			<div class="fl dir" id="selectUSER">USER</div>
+			<div class="clear"></div>
+		</div>
+		<div class="fl head">
+			<div class="fr" id="openForm">Upload</div>
+		</div>
+		<div class="clear"></div>
+		<div>
+			<div class="imgList" id="imgList">
+
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	
+	<div id="rename"><input id="newname"></div>
+	<div id="pop">
+		<div id="popClose"><i class="fa fa-window-close-o"></i></div>
+		<img id="popIm" src="">
+	</div>
+	<div id="fileLoad">
+		<form name="upload" method="post" enctype="multipart/form-data">
+			File: <input type="file" name="downloaded_file" multiple="multiple">
+			<input id="sendFile" type="submit" value="Upload">
+		</form>
+	</div>
+</body>
+	<script src="js/global.js"></script>
+	<script src="js/tree.js"></script>
+	<script src="js/main.js"></script>
+</html>
